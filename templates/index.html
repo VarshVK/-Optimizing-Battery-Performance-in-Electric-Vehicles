@@ -1,0 +1,100 @@
+{% load static %}
+
+<!DOCTYPE html>
+<!--
+Template Name: Shiphile
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+  <!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+  <head>
+    <title> EV BATTERY MANAGEMENT SYSTEM </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body id="top">
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- Top Background Image Wrapper -->
+    <div class="bgded overlay" style="background-image:url('{% static 'images/demo/backgrounds/1.jpg' %}');">
+      <!-- ################################################################################################ -->
+
+      <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+
+      <!-- ################################################################################################ -->
+      <div id="pageintro" class="hoc clear">
+        <!-- ################################################################################################ -->
+        <article>
+          <h3 class="heading"> EV BATTERY MANAGEMENT SYSTEM </h3>
+          <p> It optimizes the performance and lifespan of electric vehicle batteries. </p>
+          <footer>
+            <script>
+              function validateForm() {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+
+                // Hardcoded valid username and password
+                var validUsername = "SANJAY KUMAR K";
+                var validPassword = "Capstone";
+
+                // Check if username and password are empty
+                if (username === '' || password === '') {
+                  alert("Username or Password shouldn't be empty");
+                  return false; // Prevent form submission
+                }
+
+                // Check if entered username and password match the hardcoded values
+                if (username === validUsername && password === validPassword) {
+
+                  return true;
+                } else {
+                  // If not valid, display an error message
+                  alert("Invalid username or password");
+                  return false; // Prevent form submission
+                }
+              }
+            </script>
+            <form action='input' method="POST" enctype="multipart/form-data" class="login100-form validate-form" onsubmit="return validateForm()">
+              {% csrf_token %}
+              <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                <input class="input100" type="text" id="username" name="username" style="color: black;" placeholder="Username">
+                <span class="focus-input100"></span>
+                <span class="label-input100">Name</span>
+              </div>
+              <input class="input100" type="password" id="password" name="password" style="color: black;" placeholder="Password">
+              <span class="focus-input100"></span>
+              <span class="label-input100">Password</span>
+              <footer><button type="submit" class="btn"> LOGIN </button></footer>
+            </form>
+            <!-- ################################################################################################ -->
+          </div>
+          <!-- ################################################################################################ -->
+        </div>
+        <!-- End Top Background Image Wrapper -->
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+
+        <!-- ################################################################################################ -->
+
+        <!-- ################################################################################################ -->
+
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+        <!-- JAVASCRIPTS -->
+        <script src="{% static 'layout/scripts/jquery.min.js' %}"></script>
+        <script src="{% static 'layout/scripts/jquery.backtotop.js' %}"></script>
+        <script src="{% static 'layout/scripts/jquery.mobilemenu.js' %}"></script>
+      </body>
+    </html>
